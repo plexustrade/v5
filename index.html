@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubbles-variants</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link href="./css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="particles-js-1" id="particles-js-1"></div>
+    <div class="particles-js-2" id="particles-js-2"></div>
+    <!-- Create a div where the graph will take place -->
+    <div class="container">
+        <div style="font-size: 24px;z-index: 100;position: absolute;top: 0;"><span id="fps">--</span> FPS</div>
+        <div id="my_data"></div>
+        <div id="html_view"></div>
+    </div>
+
+    <div class="paranja"></div>
+    <div class="popup menu">
+        <h3>Меню</h3>
+        <menu>
+            <li>Пункт муню 1</li>
+            <li>Пункт муню 2</li>
+            <li>Пункт муню 3</li>
+            <li>Пункт муню 4</li>
+            <li id="fullscreenButton">Fullscreen</li>
+        </menu>
+    </div>
+    <div class="popup iframe">
+        <iframe src="" frameborder="0"></iframe>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Load d3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- <script src="lib/d3.v4.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="js/main.js?v2.10"></script> -->
+    <script>
+        particlesJS("particles-js-1", {"particles":{"number":{"value":322,"density":{"enable":false,"value_area":555}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":3},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.99,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":1.999,"random":true,"anim":{"enable":true,"speed":3,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":32,"color":"#ffffff","opacity":0.77,"width":0.99},"move":{"enable":true,"speed":0.777,"direction":"left","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":true,"rotateX":10000,"rotateY":10000}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"bubble"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":555,"size":3.33,"duration":5,"opacity":0.9,"speed":3},"repulse":{"distance":666,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+
+        particlesJS("particles-js-2", {"particles":{"number":{"value":200,"density":{"enable":false,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.7,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":5,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":40,"color":"#ffffff","opacity":1,"width":0.75},"move":{"enable":true,"speed":0.53,"direction":"left","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"bubble"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":155,"size":10,"duration":10,"opacity":0.8,"speed":1},"repulse":{"distance":111.8881118881119,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+    </script>
+    <script src="js/script.js"></script>
+</body>  
+</html>

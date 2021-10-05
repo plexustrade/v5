@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* colors */
+html {
+  height: 100%;
+  background: #fff; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+#my_data {
+  width: 100vw;
+  min-width: 100vw;
+  height: 500px;
+  min-height: 500px;
+  z-index: 5;
+  position: fixed;
+  display: flex; }
+
+.nodes circle {
+  fill: #fff;
+  stroke: #fff;
+  stroke-opacity: 0.5;
+  stroke-width: 20px; }
+
+.labelNodes text {
+  pointer-events: none;
+  font: bold 50px/1 "Fira Sans", sans-serif !important;
+  fill: #40403F !important; }
+
+.links line {
+  stroke-opacity: 1;
+  z-index: 5;
+  stroke: white; }
+
+.link {
+  stroke: white;
+  z-index: 5; }
+
+.node text {
+  pointer-events: none;
+  font: 20px sans-serif; }
+
+g circle {
+  z-index: 5;
+  width: 50px;
+  height: 50px; }
+
+.particles-js-1 {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 1300% 1300%;
+  animation: gradient 99s ease infinite;
+  background-color: #1f74db;
+  background: linear-gradient(145deg, #1f74db, #ec308c, #FFA900, #A3A847, #1f74db);
+  background-size: 1300% 1300%;
+  animation: gradient 30s ease infinite; }
+
+.particles-js-2 {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.canvas .particles-js-canvas-el {
+  all: unset;
+  display: block;
+  vertical-align: bottom;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-animation: appear 1.4s 1;
+  animation: appear 1.4s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  pointer-events: none; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 100%; }
+  100% {
+    background-position: 0% 0%; } }
